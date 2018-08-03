@@ -33,7 +33,7 @@
 
 #proj-1 {
   grid-area: proj-1;
-  background-image: url("../img/Screen Shot 2018-07-31 at 1.45.24 PM.png");
+  background-image: url("../img/Screen Shot 2018-08-01 at 4.32.52 PM.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -308,7 +308,7 @@
   color: white;
 }
 
-  @media (max-width: 1500px){
+  @media (max-width: 1550px){
     #navbar {
       position: fixed;
       top: 0;
@@ -358,7 +358,7 @@
 
     @media (max-width: 680px){
       .container {
-        grid-template-rows: 3fr .5fr 5fr .5fr 7fr .5fr 1.5fr;
+        grid-template-rows: 1.5fr .5fr 3fr .5fr 5fr .5fr 1fr;
       }
 
       #heading{

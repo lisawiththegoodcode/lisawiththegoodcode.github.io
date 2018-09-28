@@ -95,7 +95,7 @@
 #proj-4 {
   /* border: 2px solid red; */
   grid-area: proj-4;
-  background-image: url("../img/Screen Shot 2018-07-31 at 1.45.24 PM.png");
+  background-image: url("../img/Screen Shot 2018-09-27 at 9.12.08 PM.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -252,8 +252,8 @@
 }
 
 #about h2 {
-  font: 1em 'Open Sans', sans-serif;
-  letter-spacing: .1em;
+  font: .85em 'Open Sans', sans-serif;
+  letter-spacing: .085em;
 }
 
 #about p {

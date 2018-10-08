@@ -398,7 +398,7 @@
   }
 }
 
-@media (min-width: 1300px) and (max-width: 1550px){
+@media (min-width: 1260px) and (max-width: 1550px){
     #navbar {
       position: fixed;
       top: 0;

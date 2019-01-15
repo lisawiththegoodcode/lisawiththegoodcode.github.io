@@ -21,8 +21,6 @@
     top: 95vh;
     color: #333;
     font-size: 1.75em;
-    border:2px solid #333;
-    border-radius: 50%;
 }
 
 #down-arrow:hover {
@@ -241,6 +239,17 @@
   color: #e5a2a2;
   transform: scaleX(1);
   visibility: visible;
+}
+
+.active {
+    color: #e5a2a2;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #e5a2a2;
 }
 
 #heading{

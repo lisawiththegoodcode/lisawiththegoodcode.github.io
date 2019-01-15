@@ -30,9 +30,6 @@
         <div id="down-arrow">
             <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
         </div>
-        <div>
-            <span class="glyphicon glyphicon-envelope"></span>
-        </div>
     </div>
 
     <div id="container">
@@ -87,6 +84,12 @@
                 $('html, body').animate({
                     scrollTop: $("#container").offset().top
                 }, 1000);
+            });
+
+            $('nav a').click(function () {
+                console.log("Clicked!");
+                $('nav a').removeClass('active');
+                $(this).addClass('active');
             });
         });
     </script>

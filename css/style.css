@@ -1,14 +1,32 @@
 /*setting up a grid with 7 main sections: landing, about header, about, projects header, projects, contact header, contact*/
 .landing {
-  /* border: 2px solid red; */
-  grid-area: land;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-image: url("../img/rawpixel-569620-unsplash.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+    /* border: 2px solid red; */
+    /*grid-area: land;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../img/rawpixel-569620-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding: 0;
+    position: relative;
+    padding-bottom: 1em;
+    border-bottom:1.5px solid#333;
+}
+
+#down-arrow{
+    position: absolute;
+    top: 95vh;
+    color: #333;
+    font-size: 1.75em;
+}
+
+#down-arrow:hover {
+    cursor: pointer;
+    color: #e5a2a2;
+    opacity: 0.8;
 }
 
 #about-header {
@@ -17,12 +35,17 @@
 }
 
 #about {
-  /* border: 2px solid red; */
-  grid-area: about;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2em 0;
+    /* border: 2px solid red; */
+    grid-area: about;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 0;
+    height: 100vh;
+    /*padding: 0;*/
+    position: relative;
+    padding-bottom: 1em;
+    border-bottom: 1.5px solid#333;
 }
 
 #projects-header {
@@ -113,10 +136,24 @@
   filter: grayscale(100%); /* FF 35+ */
 }
 
+#projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    padding: 0;
+    position: relative;
+    padding-bottom: 1em;
+    border-bottom: 1.5px solid#333;
+}
+
 #projects {
-  /* border: 2px solid red; */
+   border: 2px solid red; 
   grid-area: projects;
   margin: 4em 20%;
+  width: 100%;
+  height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -140,19 +177,23 @@
   justify-content: center;
   align-items: center;
 }
-.container {
-  display: grid;
-  /* border: 2px solid red; */
+#container {
+  /*display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 4fr .5fr 2.5fr .5fr 3.5fr .5fr 1fr;
+  grid-template-rows: .5fr 2.5fr .5fr 3.5fr .5fr 1fr;
   grid-template-areas:
-  "land"
   "a-head"
   "about"
   "p-head"
   "projects"
   "c-head"
-  "contact";
+  "contact";*/
+}
+
+#nav-heading{
+    width:100%;
+    position: fixed;
+    top:0;
 }
 
 /*begin additional styling for landing section*/
@@ -304,7 +345,7 @@
 }
 
 @media (max-width: 679px){
-  .container {
+  #container {
     grid-template-rows: 2fr .5fr 4fr .5fr 7fr .5fr 1.25fr;
   }
 
@@ -360,7 +401,7 @@
     visibility: hidden;
   }
 
-  .container {
+  #container {
     grid-template-rows: 3fr .5fr 3fr .5fr 10fr .5fr 1.25fr;
   }
 
@@ -381,7 +422,7 @@
 }
 
 @media (min-width: 1050px) and (max-width: 1259px) {
-  .container {
+  #container {
     grid-template-rows: 4fr .5fr 3.5fr .5fr 3.5fr .5fr 1.25fr;
   }
   #navbar {

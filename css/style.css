@@ -21,6 +21,8 @@
     top: 95vh;
     color: #333;
     font-size: 1.75em;
+    border:2px solid #333;
+    border-radius: 50%;
 }
 
 #down-arrow:hover {

@@ -6,6 +6,11 @@ nav {
     color: #495057;
     font-family: 'Open Sans', sans-serif;
     letter-spacing: .075em;
+    margin-top: 4.3vh;
+}
+
+.nav-tabs .nav-item {
+    margin-top: 1.5px;
 }
 
 .nav-tabs .nav-link.active {
@@ -18,15 +23,26 @@ nav {
     bottom: 0;
     margin: 15px;
     width: calc(100% - 30px);
-    border: .5px solid #e5a2a2;
+    border-top: 1px solid #e5a2a2;
+    font-size: 1em;
+    letter-spacing: .05em;
+}
+
+footer {
+    padding: 5px;
+    color: #495057;
+    /* font-weight: lighter; */
 }
 
 .nav-tabs .nav-link:hover {
     color: #e5a2a2;
     border-color: #e5a2a2 #e5a2a2 #ffffff;
+    background-color: #ffffff;
+    transition: .5s ease-in-out;
 }
 
 .nav-tabs {
+    /* height: 10vh; */
     border-bottom: 1px solid #e5a2a2;
 
 }
@@ -47,13 +63,45 @@ nav {
     /* border: 2px solid black; */
     border: 1px solid #e5a2a2;
     border-radius: .25rem;
-    height: 20em;
+    height: 30em;
     width: 20em;
     margin-bottom: 1em;
     background-image: url("../img/John  Renee Wedding-547.jpg");
     background-size: cover;
     background-position: top ;
     background-repeat: no-repeat;
+  }
+
+  #about-container{
+    margin: 5vh auto;
+    width: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 1em;
+    grid-column-gap: 5em;
+    grid-template-areas:
+    "left right";
+  }
+
+  #about-left{
+    height: 70vh;
+    width: 100%;
+    border: 1px solid #e5a2a2;
+    border-radius: .25rem;
+    grid-area: left;
+    background-image: url("../img/John  Renee Wedding-547.jpg");
+    background-size: cover;
+    background-position: top ;
+    background-repeat: no-repeat;
+  }
+
+  #about-right{
+    padding: 4rem 0;
+    grid-area: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   #resume {
@@ -66,6 +114,7 @@ nav {
     margin: auto;
     padding: 14px;
     text-align: center;
+    grid-area: res;
   }
   
   #resume:hover {
@@ -84,8 +133,8 @@ nav {
     border-bottom: none; */
 }
 
-#grid-left{
-    grid-area: grid-left;
+#work-left{
+    grid-area: work-left;
     background-image: url("../img/Floralist.PNG");
     background-size: cover;
     background-position: center;
@@ -106,8 +155,8 @@ nav {
     transform: scale(1.03);
   }
 
-#grid-right-top{
-    grid-area: grid-top;
+#work-right-top{
+    grid-area: work-top;
     background-image: url("../img/Towers.PNG");
     background-size: cover;
     background-position: center;
@@ -118,8 +167,8 @@ nav {
     height: 70vh; */
 }
 
-#grid-right-mid{
-    grid-area: grid-middle;
+#work-right-mid{
+    grid-area: work-middle;
     background-image: url("../img/TicTacToe.PNG");
     background-size: cover;
     background-position: center;
@@ -128,8 +177,8 @@ nav {
     display: block;
 }
 
-#grid-right-bot{
-    grid-area: grid-bot;
+#work-right-bot{
+    grid-area: work-bot;
     background-image: url("../img/Provisions.PNG");
     background-size: contain;
     background-position: center;
@@ -138,8 +187,8 @@ nav {
     display: block;
 }
 
-#grid-container{
-    margin: 1vh auto;
+#work-container{
+    margin: 5vh auto;
     width: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -147,16 +196,26 @@ nav {
     grid-row-gap: 1em;
     grid-column-gap: 5em;
     grid-template-areas:
-    "grid-left grid-top"
-    "grid-left grid-middle"
-    "grid-left grid-bot";
+    "work-left work-top"
+    "work-left work-middle"
+    "work-left work-bot";
 }
 
 #heading{
-    padding: 3vh;
+    padding: 1vh;
     display: flex;
     flex-direction: column;
-    align-items: center;   
+    align-items: center;
+    margin-top: 6px;   
+}
+
+header{
+    width: 225px;
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 .container {
@@ -179,12 +238,10 @@ padding-left: .3em;
 font-family: 'Open Sans', sans-serif;
 font-size: 1em;
 letter-spacing: .075em;
+color: #495057;
 }
 
 
 @media screen and (min-width: 992px){
-    .navbar {
-        display: flex;
-        justify-content: center;
-    }
+
 }

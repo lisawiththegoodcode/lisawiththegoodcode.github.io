@@ -21,10 +21,10 @@
     <nav>
         <ul class="nav nav-tabs">
             <li class="nav-item">
-                <a class="nav-link active" href="#work">work</a>
+                <a id="nav-work" class="nav-link active" href="#work">work</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#about">about</a>
+                <a id="nav-about" class="nav-link" href="#about">about</a>
             </li>
         </ul>
     </nav>
@@ -34,16 +34,50 @@
             <h2>web dev | austin, tx</h2>
         </div>
     </header>
-    <div id=grid-container>
-        <div id=grid-left class="container">
-        </div>    
-        <div id=grid-right-top class="container">
-        </div>  
-        <div id=grid-right-mid class="container">
-        </div> 
-        <div id=grid-right-bot class="container">
-        </div> 
-    </div>
+    <section id="work">
+        <div id=grid-container>
+            <div id="grid-left" class="container">
+            </div>    
+            <div id="grid-right-top" class="container">
+            </div>  
+            <div id="grid-right-mid" class="container">
+            </div> 
+            <div id="grid-right-bot" class="container">
+            </div> 
+        </div>
+    </section>
+    <section id="about">
+        <div id="flex-container">
+            <div id="bio-pic">
+    
+            </div>
+            <p>
+                    Hello, I'm Lisa. I develop full-stack web applications using C# / ASP.NET Core MVC / SQL Server / HTML / CSS / JavaScript and more. 
+                    I have a passion for design, a relentless mind, and an intrinsic motivation to create.                     
+                    When not coding, I'm either styling spaces with flowers, at the yoga studio,
+                    learning a new craft, or enjoying the outdoors with my husband and our two dogs.
+                    Let's be friends and make cool things together.
+                    <!-- I'm an energetic and active person with a creative, meticulous, knowledgeable, and collaborative to make beautiful things. 
+                    My imagination just loves working with flowers. But my mind wanders.
+                    
+                    You see, at my core, while I'm highly imaginative and intrinsically motivated to create, I'm also an eager learner and relentless problem-solver. 
+                    I first gave coding a try after a conversation with a developer friend who suggested I'd really enjoy it. 
+                    As someone who had never given techie things too much thought, I was surprised to find myself 
+                    working through online tutorial after online tutorial with glee; this way of thinking felt like a glove for my brain. 
+                    It was an exhilarating discovery.
+                    
+                    I immediately began looking for a professional program to help me further my learning and, ultimately, shift my career from florist to developer. 
+                    I started taking classes with Austin Coding Academy in early 2018, and I am proud to be on track to graduate by the end of the year. 
+                    After graduation, my goal is to attain a full-time position as a developer. 
+                    In the meantime, I would love to intern with your team or provide freelance support. 
+                    Let's collaborate!
+                    
+                     -->
+            </p>
+            <a id="resume" target="_blank" href="./img/Resume_LisaUmhey.pdf"> > my resume</a>
+
+        </div>
+    </section>
 
 
     <div class="line">
@@ -104,6 +138,8 @@
         }
 
         $(document).ready(function () {
+            $('#about').hide();
+
             $('#down-arrow').on('click', function () {
                 $("html").scrollTop(0);
                 console.log("Clicked!");
@@ -117,6 +153,26 @@
                 $('nav a').removeClass('active');
                 $(this).addClass('active');
             });
+
+            $('#nav-about').click(function () {
+                console.log("Clicked!");
+                $('#work').hide();
+                $('#about').show();
+            });
+
+            $('#nav-work').click(function () {
+                console.log("Clicked!");
+                $('#about').hide();
+                $('#work').show();
+            });
+
+            $('#grid-left').click(function () {
+                $('#grid-right-top').hide(1000);
+                $('#grid-right-mid').hide(1000);
+                $('#grid-right-bot').hide(1000);
+                $('#work').append("<h1>Floralist</h1>");
+            });
+
         });
     </script>
 </body>

@@ -31,6 +31,48 @@ nav {
 
 }
 
+#flex-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem auto;
+    width: 100vh;
+}
+
+#about p {
+    text-align: justify;
+}
+
+#bio-pic {
+    /* border: 2px solid black; */
+    border: 1px solid #e5a2a2;
+    border-radius: .25rem;
+    height: 20em;
+    width: 20em;
+    margin-bottom: 1em;
+    background-image: url("../img/John  Renee Wedding-547.jpg");
+    background-size: cover;
+    background-position: top ;
+    background-repeat: no-repeat;
+  }
+
+  #resume {
+    color: #495057;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: .075em;;
+    text-decoration: none;
+    border: 1px solid #495057;
+    border-radius: .25rem;
+    margin: auto;
+    padding: 14px;
+    text-align: center;
+  }
+  
+  #resume:hover {
+    border:1px solid #e5a2a2;
+    color: #e5a2a2;
+    transition: .5s ease-in-out;
+  }
 #container{
     /* width: calc(100% - 30px);
     margin: 0 15px;
@@ -89,7 +131,7 @@ nav {
 #grid-right-bot{
     grid-area: grid-bot;
     background-image: url("../img/Provisions.PNG");
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
@@ -114,13 +156,12 @@ nav {
     padding: 3vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    
-  }
+    align-items: center;   
+}
 
 .container {
     width:100%;
-    border: 2px solid #e5a2a2;
+    border: 1px solid #e5a2a2;
     border-radius: .25rem;
     transition: transform 1s ease-in-out, filter .5s ease-in-out;
     -webkit-filter: grayscale(0%);

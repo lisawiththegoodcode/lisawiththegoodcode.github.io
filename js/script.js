@@ -25,15 +25,16 @@ $(document).ready(function () {
     $('#nav-about').click(function () {
         console.log("Clicked!");
         $('#work').hide();
-        $('#floralist').hide();
-        $('#other-work').hide();
         $('#about').show();
     });
 
     $('#nav-work').click(function () {
         console.log("Clicked!");
         $('#about').hide();
-        $('#work').show();
+        $('#work').show(function(){
+            window.scrollTo(0, 0);
+        });
+        // location.reload();
     });
 
     $('#grid-left').click(function () {
@@ -42,5 +43,7 @@ $(document).ready(function () {
         $('#grid-right-bot').hide(1000);
         $('#work').append("<h1>Floralist</h1>");
     });
+
+
 
 });

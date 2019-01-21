@@ -32,7 +32,7 @@ nav {
     position: fixed;
     bottom: 0;
     margin: 0 15px;
-    padding: 15px 0;
+    padding: 5px 0;
     width: calc(100% - 30px);
     border-top: 1px solid #e5a2a2;
     font-size: 1em;
@@ -148,6 +148,7 @@ footer {
 #icons {
     display: flex;
     flex-direction: column;
+    align-items: center;
     position: fixed;
     right:0;
     bottom: 8.8vh;
@@ -240,11 +241,16 @@ footer {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-row-gap: 1em;
-    grid-column-gap: 4em;
+    grid-column-gap:4em;
     grid-template-areas:
     "work-left work-top"
     "work-left work-middle"
     "work-left work-bot";
+}
+
+#work{
+    position: relative;
+    top:0;
 }
 
 #heading{
@@ -279,7 +285,8 @@ color: #495057;
 }
 
 #floralist {
-    height: 80vh;
+    margin: 10vh auto;
+    height: 75vh;
     padding: 0;
     position: relative;
 }
@@ -287,6 +294,7 @@ color: #495057;
 #floralist div {
     text-align: center;
     padding: 10px;
+    width: 300px;
 }
 
 

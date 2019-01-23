@@ -341,17 +341,19 @@ color: #495057;
     }
 
     #work-left{
-        width: 25vh;
-        height: 25vh;
+        width: 10vh;
+        height: 10vh;
         margin: 10px;
     }
 
     .container{
-        width: 25vh;
-        height: 25vh;
+        width: 10vh;
+        height: 10vh;
         margin: 10px;
     }
-/* four button grid that scrolls to content */
-    /* hamburger, border under heading */
+    header{
+        width: 220px;
+        left: auto;
+    }
     /* work on footer, bigger, icons, etc */
 }

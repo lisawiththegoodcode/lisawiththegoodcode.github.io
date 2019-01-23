@@ -340,20 +340,80 @@ color: #495057;
         height: auto;
     }
 
-    #work-left{
+    #work-left, .container{
         width: 10vh;
         height: 10vh;
-        margin: 10px;
-    }
-
-    .container{
-        width: 10vh;
-        height: 10vh;
-        margin: 10px;
+        margin: .8rem;
     }
     header{
         width: 220px;
         left: auto;
     }
+
+    #heading{
+        padding: .7vh;
+        margin-top: 15px;
+    }
+
+    #about-container{
+        margin: 0;
+        margin-top: 1vh;        
+        width: auto;
+        display: flex;
+        flex-direction: column;
+      }
+
+      #about-left{
+          margin: 2.5vh auto 0;
+          width: 250px;
+          height: 250px;
+          border-radius: 50%;
+      }
+      #about-right{
+          padding: 1rem 5px;
+          margin: 0 15px 60px;
+
+      }
+
     /* work on footer, bigger, icons, etc */
+}
+@media screen and (max-width: 400px){
+    nav{
+        padding: 0 5px;
+    }
+    header{
+        width: 160px;
+    }
+    #heading{
+        margin-top: 7px;
+    }
+    #heading h1{
+        font-size: 1.35em;
+        margin-bottom: .01rem;
+    }
+    #heading h2{
+        font-size: .75em;
+    }
+    .nav-link{
+        margin-top: 3vh;
+        padding: .5rem .75rem;
+    }
+    .line{
+        margin:0 5px;
+        width: calc(100% - 10px);
+    }
+    #icons{
+        bottom: 12px;
+    }
+    #icons i {
+        padding: 0 9px;
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 360px){
+    #work-left, .container{
+    margin: .425em;
+    }
+
 }

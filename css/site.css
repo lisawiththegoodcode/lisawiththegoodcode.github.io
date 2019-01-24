@@ -85,9 +85,9 @@ footer {
     background-size: cover;
     background-position: top ;
     background-repeat: no-repeat;
-  }
+}
 
-  #about-container{
+#about-container{
     margin: 5vh auto;
     width: 100vh;
     display: grid;
@@ -96,30 +96,33 @@ footer {
     grid-column-gap: 5em;
     grid-template-areas:
     "left right";
-  }
+}
 
-  #about-left{
+#about-left{
     height: 70vh;
     width: 100%;
-    border: 1px solid #e5a2a2;
-    border-radius: .25rem;
+    /* border: 1px solid #e5a2a2; */
+    /* border-radius: .25rem; */
     grid-area: left;
     background-image: url("../img/John  Renee Wedding-547.jpg");
     background-size: cover;
     background-position: top ;
     background-repeat: no-repeat;
-  }
+    -moz-box-shadow:    inset 0 0 15px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.1);
+    box-shadow:         inset 0 0 15px rgba(0, 0, 0, 0.1);
+}
 
-  #about-right{
-    padding: 2.75rem 0;
+#about-right{
+    padding: 1rem 0;
     grid-area: right;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
+}
 
-  #resume {
+#resume {
     color: #495057;
     font-family: 'Open Sans', sans-serif;
     letter-spacing: .075em;;
@@ -131,9 +134,9 @@ footer {
     text-align: center;
     grid-area: res;
     transition: transform .5s ease-in-out;
-  }
-  
-  #resume:hover {
+}
+
+#resume:hover {
     border:1px solid #e5a2a2;
     color: #e5a2a2;
     transition: .5s ease-in-out;
@@ -143,7 +146,7 @@ footer {
     -ms-transform: scale(1.03);
     transform: scale(1.03);
 
-  }
+}
 
 #icons {
     display: flex;
@@ -151,7 +154,7 @@ footer {
     align-items: center;
     position: fixed;
     right:0;
-    bottom: 8vh;
+    bottom: 7vh;
     padding: 20px;
 }
 
@@ -178,7 +181,7 @@ footer {
     border-radius: .25rem;
     transition: transform 1s ease-in-out;
     text-align: center;
-    box-shadow: inset 1px 1px 0 rgba(0,0,0,.1), inset 0px 0 rgba(0,0,0,.07);
+    /* box-shadow: inset 1px 1px 0 rgba(0,0,0,.1), inset 0px 0 rgba(0,0,0,.07); */
 }
 
 .container:hover {
@@ -189,9 +192,12 @@ footer {
     -webkit-transform: scale(1.02);
     -ms-transform: scale(1.02);
     transform: scale(1.02);
+    box-shadow:
+    0 0 0 1px rgba(0,0,0,.05),
+    0 0 0 1px rgba(0,0,0,.1);
   }
 
-  #work-left{
+#work-left{
     grid-area: work-left;
     background-image: url("../img/floralist-icon.png");
     background-size: cover;
@@ -273,7 +279,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 6px;   
+    margin-top: 4px;   
 }
 
 header{
@@ -343,10 +349,9 @@ color: #495057;
     width: 33%;
 }
 #floralist-text{
-    width: 100%
+    width: 100%;
     border: 1px solid goldenrod;
 }
-
 @media screen and (max-width: 960px){
     #icons{
         flex-direction: row;
@@ -362,8 +367,40 @@ color: #495057;
         font-size: 30px;
     }
 }
+@media screen and (max-width: 760px){
+    #about-container{
+        width: 90vh;
+        grid-row-gap: 1em;
+        grid-column-gap: 2em;
+}
+@media screen and (max-width: 600px){
+    #about-container{
+        margin: 0;
+        margin-top: 1vh;        
+        width: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    #about-left{
+        width: calc(90%);
+        height: 68vh;
+        margin: 2.5vh 20px 0 20px;
+        /* border-radius: 50%; */
+    }
+    #about-right{
+        padding: 1rem 5px;
+        margin: 0 15px 60px;
+    }
+    #work-container{
+        margin: 4vh auto;
+        width: 80vh;
+        grid-row-gap: .25em;
+        grid-column-gap:.25em;
 
-@media screen and (max-width: 650px){
+    }
+/* }
+
+@media screen and (max-width: 525px){ */
     #work-container{
         display: flex;
         flex-direction: row;
@@ -375,7 +412,6 @@ color: #495057;
         width: auto;
         height: auto;
     }
-
     #work-left, .container{
         width: 10vh;
         height: 10vh;
@@ -385,7 +421,6 @@ color: #495057;
         width: 220px;
         left: auto;
     }
-
     #heading{
         padding: .7vh;
         margin-top: 12.5px;
@@ -393,27 +428,6 @@ color: #495057;
     #heading h1{
         margin:0;
     }
-    #about-container{
-        margin: 0;
-        margin-top: 1vh;        
-        width: auto;
-        display: flex;
-        flex-direction: column;
-      }
-
-      #about-left{
-          margin: 2.5vh auto 0;
-          width: 250px;
-          height: 250px;
-          border-radius: 50%;
-      }
-      #about-right{
-          padding: 1rem 5px;
-          margin: 0 15px 60px;
-
-      }
-
-    /* work on footer, bigger, icons, etc */
 }
 @media screen and (max-width: 400px){
     nav{
@@ -423,7 +437,7 @@ color: #495057;
         width: 160px;
     }
     #heading{
-        margin-top: 7px;
+        margin-top: 4px;
     }
     #heading h1{
         font-size: 1.35em;
@@ -453,5 +467,5 @@ color: #495057;
     #work-left, .container{
     margin: .425em;
     }
-
+}
 }

@@ -25,7 +25,9 @@ $(document).ready(function () {
     $('#nav-about').click(function () {
         console.log("Clicked!");
         $('#work').hide();
-        $('#about').show();
+        $('#about').show(function(){
+            window.scrollTo(0, 0);
+        });
     });
 
     $('#nav-work').click(function () {
@@ -34,7 +36,6 @@ $(document).ready(function () {
         $('#work').show(function(){
             window.scrollTo(0, 0);
         });
-        // location.reload();
     });
 
     $('#grid-left').click(function () {

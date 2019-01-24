@@ -12,9 +12,16 @@ $(document).ready(function () {
         $("html").scrollTop(0);
         console.log("Clicked!");
         $('html, body').animate({
-            scrollTop: $("#floralist").offset().top
+            scrollTop: $('.floralist-container').offset().top
         }, 1000);
     });
+
+    $('#learn-more').on('click', function () {
+        $('html, body').animate({
+            scrollTop: $("#floralist-2").offset().top
+        }, 1000);
+    });
+
 
     $('nav a').click(function () {
         console.log("Clicked!");

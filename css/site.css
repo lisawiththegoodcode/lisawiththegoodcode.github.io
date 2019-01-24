@@ -5,11 +5,11 @@
 }
 nav {
     padding: 15px 15px 0 15px;
-    position: sticky;
-    position: -webkit-sticky;
+    position: fixed;
     top: 0;
     background-color: white;
     z-index: 1;
+    width: 100%;
 }
 
 .nav-link{
@@ -88,7 +88,7 @@ footer {
 }
 
 #about-container{
-    margin: 5vh auto;
+    margin: 18vh auto;
     width: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -114,7 +114,7 @@ footer {
 }
 
 #about-right{
-    padding: 1rem 0;
+    padding: 0.5rem 0;
     grid-area: right;
     display: flex;
     flex-direction: column;
@@ -122,7 +122,7 @@ footer {
     align-items: center;
 }
 
-#resume {
+.btn {
     color: #495057;
     font-family: 'Open Sans', sans-serif;
     letter-spacing: .075em;;
@@ -136,7 +136,7 @@ footer {
     transition: transform .5s ease-in-out;
 }
 
-#resume:hover {
+.btn:hover {
     border:1px solid #e5a2a2;
     color: #e5a2a2;
     transition: .5s ease-in-out;
@@ -145,7 +145,10 @@ footer {
     -webkit-transform: scale(1.03);
     -ms-transform: scale(1.03);
     transform: scale(1.03);
+}
 
+#learn-more{
+    padding:14px 18px;
 }
 
 #icons {
@@ -181,6 +184,7 @@ footer {
     border-radius: .25rem;
     transition: transform 1s ease-in-out;
     text-align: center;
+    box-shadow: 0 0 .5em rgba(73,80,87,.5);
     /* box-shadow: inset 1px 1px 0 rgba(0,0,0,.1), inset 0px 0 rgba(0,0,0,.07); */
 }
 
@@ -256,7 +260,7 @@ footer {
 }
 
 #work-container{
-    margin: 4vh auto;
+    margin: 17.5vh auto 0;
     width: 90vh;
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -279,7 +283,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 4px;   
+    margin-top: 2px;   
 }
 
 header{
@@ -292,66 +296,137 @@ header{
 }
 
 #heading h1 {
-font: 1.8em 'Roboto Slab', serif;
-font-weight: lighter;
-letter-spacing: .1em;
-padding-left: .3em;
+    font: 1.8em 'Roboto Slab', serif;
+    font-weight: lighter;
+    letter-spacing: .1em;
+    padding-left: .3em;
 }
 
 #heading h2{
-font-family: 'Open Sans', sans-serif;
-font-size: 1em;
-letter-spacing: .075em;
-color: #495057;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    letter-spacing: .075em;
+    color: #495057;
 }
 
-#floralist {
-    margin: 10vh auto;
-    height: 75vh;
-    padding: 0 20px;
+#floralist-1 {
+    /* max-width: 80vh; */
+    margin: 0 auto;
+    padding: 16vh 0 0;
+    max-width:85%;
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    display: grid;
+    /* grid-template-columns:  .75fr; */
+    grid-column-gap:1em;
+    grid-template-areas:
+    "f-left f-mid f-right";
 }
 
-#floralist-left, #floralist-right {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50vh;
-    border: 1px solid red;
-    flex-wrap: wrap;
-    margin: 15px;
+#floralist-left{
+    grid-area: f-left;
+    background-image: url("../img/Floralist.PNG");
+    height: 70vh;
+    max-width: 40vh;
+    background-size: cover;
+    left:0;
 }
-
-#floralist-left-right{
+#floralist-mid{
+    grid-area: f-mid;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid goldenrod;
+    max-width:60vh;
+    grid-area: f-mid;
+    text-align: justify;
+}
+#floralist-intro{
+    padding: 0 1rem;
+
+}
+#floralist-right{
+    grid-area:f-right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70vh;
+    max-width: 40vh;
 }
 
-#floralist-landing{
-    border: 1px solid goldenrod;
-    background-image: url("../img/Floralist.PNG");
-    background-size: cover;
+#floralist-welcome{
+    background-image: url("../img/floralist-welcome.PNG");
+}
+#floralist-img-lib{
+    background-image: url("../img/floralist-image-lib.PNG");
+}
+
+.floralist-img-card{
+    width: 40vh;
+    margin-bottom: 10px;
+}
+
+#floralist-btns{
+    display: flex;
+    justify-content: space-between;
+    align-items: space-between;
+    width:100%;
+}
+
+.floralist-img{
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
     display: block;
+    width: 40vh;
+    height: 25vh;
+    border: 1px ;
+    box-shadow: inset 0 0 10px rgba(73,80,87,.1);
+    border: 0.5px solid #495057;
+    border-radius: .25rem;
+}
+.floralist-text{
+    font-size: .75rem;
+    text-align: justify;
+}
+
+#floralist-2 {
+    margin: 0 auto;
+    padding: 16vh 0;
+    height: 100vh;
+    max-width:85%;
+    position: relative;
+    display: grid;
+    grid-column-gap:2em;
+    grid-template-areas:
+    "f2-1 f2-2"
+    "f2-3 f2-4";
+}
+#floralist-proposals{
+    background-image: url("../img/floralist-proposals.PNG");
+    grid-area: f2-1;
+}
+#floralist-proposal-create{
+    background-image: url("../img/floralist-edit-proposal.PNG");
+    grid-area: f2-2;
+
+}
+#floralist-img-search{
+    background-image: url("../img/floralist-search.PNG");
+    grid-area: f2-3;
+}
+#floralist-proposal-send{
+    background-image: url("../img/floralist-email.PNG");
+    grid-area: f2-4;
+}
+#floralist-2 .floralist-img-card{
     width: 100%;
-    height: 70vh;
 }
-.floralist-img{
-    border: 1px solid goldenrod;
-    width: 33%;
-}
-#floralist-text{
+.f2-img{
     width: 100%;
-    border: 1px solid goldenrod;
+    height: 28vh;
 }
+
 @media screen and (max-width: 960px){
     #icons{
         flex-direction: row;
@@ -376,7 +451,7 @@ color: #495057;
 @media screen and (max-width: 600px){
     #about-container{
         margin: 0;
-        margin-top: 1vh;        
+        margin-top: 13vh;        
         width: auto;
         display: flex;
         flex-direction: column;
@@ -416,6 +491,8 @@ color: #495057;
         width: 10vh;
         height: 10vh;
         margin: .8rem;
+        box-shadow: 0 0 .25em rgba(73,80,87,.5);
+
     }
     header{
         width: 220px;

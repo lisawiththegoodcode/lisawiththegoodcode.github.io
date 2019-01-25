@@ -1,3 +1,7 @@
+h2{
+    letter-spacing: .05rem;
+    font: 1.8em 'Roboto Slab', serif;
+}
 #container{
     height: 100vh;
     padding: 0;
@@ -129,7 +133,6 @@ footer {
     text-decoration: none;
     border: 1px solid #495057;
     border-radius: .25rem;
-    margin: auto;
     padding: 14px;
     text-align: center;
     grid-area: res;
@@ -318,7 +321,7 @@ header{
     position: relative;
     display: grid;
     /* grid-template-columns: .25fr .5fr .25fr; */
-    grid-column-gap:1em;
+    grid-column-gap:1.5em;
     grid-template-areas:
     "f-left f-mid f-right";
 }
@@ -335,7 +338,7 @@ header{
     grid-area: f-mid;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     max-width:60vh;
     grid-area: f-mid;
@@ -368,8 +371,7 @@ header{
 
 #floralist-btns{
     display: flex;
-    justify-content: space-between;
-    align-items: space-between;
+    justify-content: space-around;
     width:100%;
 }
 
@@ -405,7 +407,6 @@ header{
 #floralist-2 {
     margin: 0 auto;
     padding: 16vh 0 0;
-    height: 100vh;
     max-width:87%;
     position: relative;
     display: grid;
@@ -428,6 +429,7 @@ header{
 }
 #floralist-2 .floralist-img-card{
     width: 100%;
+    max-height: 33vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -435,7 +437,6 @@ header{
 }
 .f2-img{
     height: 33vh;
-    width: 42vh;
 }
 .f2-text{
     padding: .25rem 1rem;
@@ -446,22 +447,21 @@ header{
     justify-content: space-evenly;
     align-items: center;
     margin: 0 auto;
-    height: 100vh;
     padding: 18vh 10vh;
     /* max-width:87%; */
     position: relative;
 }
 .other-work{
     max-width: 45vh;
-    height: 70vh;
-    padding: 1vh;
+    height: 75vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: flex-start;
 }
 .other-work p{
     text-align: justify;
-    font-size: .9rem;
+    font-size: .8rem;
     margin-top: .5rem;
 }
 .other-work .btn{
@@ -469,7 +469,7 @@ header{
 }
 .work-img{
     height: 30vh;
-    max-width: 45vh;
+    width: 40vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -491,7 +491,7 @@ header{
 }
 
 
-@media screen and (max-width: 960px){
+@media screen and (max-width: 1000px){
     #icons{
         flex-direction: row;
         align-items: center;

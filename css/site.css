@@ -406,11 +406,12 @@ header{
 }
 #floralist-2 {
     margin: 0 auto;
-    padding: 16vh 0 0;
+    padding: 17vh 0 0;
     max-width:87%;
     position: relative;
     display: grid;
     grid-column-gap:1em;
+    grid-row-gap: 1em;
     grid-template-areas:
     "f2-1 f2-2"
     "f2-3 f2-4";

@@ -7,15 +7,33 @@ window.onbeforeunload = function () {
 $(document).ready(function () {
     $('#about').hide();
     // $('#floralist').hide();
+    
+    $('header').on('click', function () {
+        $("html").scrollTop(0);  
+    });
 
     $('#work-left').on('click', function () {
-        $("html").scrollTop(0);
-        console.log("Clicked!");
         $('html, body').animate({
             scrollTop: $('.floralist-container').offset().top
         }, 1000);
     });
 
+    $('#work-right-top').on('click', function () {
+        $('html, body').animate({
+            scrollTop: $('#other-work').offset().top
+        }, 1000);
+    });
+    $('#work-right-mid').on('click', function () {
+        $('html, body').animate({
+            scrollTop: $('#other-work').offset().top
+        }, 1000
+        );
+    });
+    $('#work-right-bot').on('click', function () {
+        $('html, body').animate({
+            scrollTop: $('#other-work').offset().top
+        }, 1000);
+    });
     $('#learn-more').on('click', function () {
         $('html, body').animate({
             scrollTop: $("#floralist-2").offset().top

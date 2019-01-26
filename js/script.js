@@ -70,6 +70,16 @@ $(document).ready(function () {
         $('#work').append("<h1>Floralist</h1>");
     });
 
+    function mediaQueries(x) {
+        if (x.matches) { // If media query matches
+            $('#learn-more').hide();
+            $('#other-work').prepend("<h2 id='more-work'>More Work</h2>");
+        }
+      }
+      
+    var x = window.matchMedia("(max-width: 768px)")
+    mediaQueries(x) // Call listener function at run time
+    x.addListener(mediaQueries) // Attach listener function on state changes
 
 
 });

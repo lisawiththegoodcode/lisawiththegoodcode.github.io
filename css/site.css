@@ -312,16 +312,16 @@ header{
     letter-spacing: .075em;
     color: #495057;
 }
-
+.floralist-container{
+    display: flex;
+}
 #floralist-1 {
-    /* max-width: 80vh; */
     margin: 0 auto;
     padding: 16vh 0 0;
-    max-width:85%;
     position: relative;
     display: grid;
-    /* grid-template-columns: .25fr .5fr .25fr; */
-    grid-column-gap:1.5em;
+    grid-template-columns: 40vh 60vh 40vh;
+    grid-column-gap:3em;
     grid-template-areas:
     "f-left f-mid f-right";
 }
@@ -450,11 +450,10 @@ header{
     align-items: center;
     margin: 0 auto;
     padding: 16vh 10vh;
-    /* max-width:87%; */
     position: relative;
 }
 .other-work{
-    padding: 0 1vh;
+    padding: 0 2vh;
     max-width: 45vh;
     height: 75vh;
     display: flex;
@@ -493,8 +492,7 @@ header{
     background-image: url("../img/TicTacToe.PNG");
 }
 
-
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1024px){
     #icons{
         flex-direction: row;
         align-items: center;
@@ -503,19 +501,84 @@ header{
         padding: 0;
         margin-right: 5px;
     }
-
     #icons i{
         padding: 0 20px;
         font-size: 30px;
     }
+    #other-work{
+        padding: 16vh 0;
+    }
+    #floralist-1{
+        grid-column-gap:1.5em;
+    }
 }
-@media screen and (max-width: 760px){
+@media screen and (max-width: 768px){
+    #work{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #floralist-1{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    #floralist-right{
+        padding-top: 8vh;
+        margin: 0 auto;
+        height: auto;
+        max-width: none;
+    
+    }
+    .floralist-img-card, #floralist-2 .floralist-img-card {
+        width: 100%;
+        max-height: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .floralist-img, .f2-img{
+        width: 66vh;
+        height: 40vh;    
+    }
+    .floralist-text{
+        padding: .25rem 1rem;
+        max-width: 40vh;
+        font-size: 1rem;
+    }
+    #floralist-2{
+        display: block;
+        padding:0;
+        max-width:none;
+    }
+    #other-work{
+        display:block;
+    }
+    .other-work{
+        padding: 2vh 0;
+        max-width: 60vh;
+        margin: 0 auto;
+    }
+    .work-img{
+        height: 45vh;
+        width: 60vh;
+        background-position: top;
+    }
+    #more-work{
+        text-align: center;
+        border-bottom: 1px solid #e5a2a2;
+        padding: 1vh;
+        text-transform: uppercase;
+    }
     #about-container{
         width: 90vh;
         grid-row-gap: 1em;
         grid-column-gap: 2em;
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 610px){
     #about-container{
         margin: 0;
         margin-top: 13vh;        
@@ -534,32 +597,20 @@ header{
         margin: 0 15px 60px;
     }
     #work-container{
-        margin: 4vh auto;
         width: 80vh;
-        grid-row-gap: .25em;
-        grid-column-gap:.25em;
-
+        grid-row-gap: 1em;
+        grid-column-gap: 1em;
     }
-/* }
-
-@media screen and (max-width: 525px){ */
-    #work-container{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
-        margin-top: 1vh;
-        width: auto;
-        height: auto;
+    #floralist-mid{
+        max-width: 40vh;
     }
-    #work-left, .container{
-        width: 10vh;
-        height: 10vh;
-        margin: .8rem;
-        box-shadow: 0 0 .25em rgba(73,80,87,.5);
-
+    #floralist-left{
+        height: 80vh;
+        max-width: 32vh;
+    }
+    .floralist-img, .f2-img{
+        width: 40vh;
+        height: 30vh;
     }
     header{
         width: 220px;
@@ -573,7 +624,7 @@ header{
         margin:0;
     }
 }
-@media screen and (max-width: 400px){
+@media screen and (max-width: 425px){
     nav{
         padding: 0 5px;
     }
@@ -604,6 +655,36 @@ header{
     #icons i {
         padding: 0 9px;
         font-size: 25px;
+    }
+    #work-container{
+        width: 50vh;
+        grid-row-gap: 1em;
+        grid-column-gap: 1em;
+        margin-top: 18vh;
+        grid-template-areas: 
+        "work-left work-left work-left" 
+        "work-top work-middle work-bot";
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 4fr 1fr;
+    }
+    #work-left{
+        height: 50vh;
+    }
+    #floralist-left{
+        height: 70vh;
+        width: 75%;
+        max-width: none;
+        margin-bottom: 5vh;
+    }
+    #floralist-mid{
+        max-width: none;
+        width: 75%;
+    }
+    #floralist-right{
+        padding-top: 5vh;
+    }
+    .floralist-img-card, #floralist-2 .floralist-img-card{
+        flex-direction: column;
     }
 }
 

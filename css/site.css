@@ -556,22 +556,27 @@ header{
     }
     #other-work{
         display:block;
+        padding: 0;
     }
     .other-work{
         padding: 2vh 0;
-        max-width: 60vh;
+        max-width: 55vh;
         margin: 0 auto;
+        height: auto
     }
     .work-img{
-        height: 45vh;
-        width: 60vh;
+        height: 40vh;
+        width: 55vh;
         background-position: top;
     }
-    #more-work{
-        text-align: center;
-        border-bottom: 1px solid #e5a2a2;
-        padding: 1vh;
-        text-transform: uppercase;
+    #towers{
+        padding: 16vh 0 0;
+    }
+    #ttt{
+        padding: 16vh 0 12vh;
+    }
+    #cart{
+        padding: 4vh 0 12vh;
     }
     #about-container{
         width: 90vh;
@@ -653,8 +658,8 @@ header{
         bottom: 12px;
     }
     #icons i {
-        padding: 0 9px;
-        font-size: 25px;
+        padding: 0 14px;
+        font-size: 28px;
     }
     #work-container{
         width: 50vh;
@@ -670,15 +675,18 @@ header{
     #work-left{
         height: 50vh;
     }
+    #work-right-bot{
+        background-size: cover;
+    }
     #floralist-left{
         height: 70vh;
-        width: 75%;
+        width: 50vh;
         max-width: none;
         margin-bottom: 5vh;
     }
     #floralist-mid{
         max-width: none;
-        width: 75%;
+        width: 50vh;
     }
     #floralist-right{
         padding-top: 5vh;
@@ -686,11 +694,70 @@ header{
     .floralist-img-card, #floralist-2 .floralist-img-card{
         flex-direction: column;
     }
+    .floralist-img, .f2-img{
+        width: 50vh;
+        height: 40vh;
+    }
+    .floralist-text {
+        max-width: 50vh;
+    }
+    #other-work{
+        padding: 10vh 0;
+    }
+    .other-work{
+        max-width: 50vh;
+        height: auto;
+    }
+    .other-work p{
+        font-size: 1rem;
+    }
+    .work-img{
+        height: 40vh;
+        width: 50vh;
+    }
+    #towers{
+        padding: 10vh 0 0;
+    }
+    #ttt{
+        padding: 10vh 0 10vh;
+    }
+    #cart{
+        padding: 0 0 3vh;
+    }
 }
 
-@media screen and (max-width: 360px){
-    #work-left, .container{
-    margin: .425em;
+@media screen and (max-width: 320px){
+    #work-container{
+        width: 40vh;
+        margin-top: 20vh;
+    }
+    #work-left{
+        height:45vh;
+    }
+    #floralist-left{
+        width: 40vh;
+    }
+    #floralist-mid{
+        width:40vh;
+    }
+    .floralist-img, .f2-img{
+        width:40vh;
+        height:30vh;
+    }
+    .floralist-text{
+        max-width:40vh;
+        padding:0;
+    }
+    .other-work{
+        max-width:40vh;
+    }
+    .work-img{
+        width:40vh;
+        height:30vh;
+    }
+    #icons i {
+        padding: 5px 10px;
+        font-size: 25px;
     }
 }
 }

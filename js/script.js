@@ -9,7 +9,10 @@ $(document).ready(function () {
     // $('#floralist').hide();
     
     $('header').on('click', function () {
-        $("html").scrollTop(0);  
+        console.log("clicked");
+        // $('html').scrollTop(0); 
+        window.scrollTo(0,0); 
+        // document.scrollingElement.scrollTop(0);
     });
 
     $('#work-left').on('click', function () {

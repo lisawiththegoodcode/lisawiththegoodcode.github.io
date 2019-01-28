@@ -461,14 +461,25 @@ header{
         justify-content: center;
         align-items: center;
     }
+    #work-container{
+        width: 80vh;
+        grid-row-gap: 1em;
+        grid-column-gap: 1em;
+    }
+    #floralist-mid{
+        max-width: 55vh;
+        justify-content: center;
+    }
+    #floralist-left{
+        height: 75vh;
+        max-width: 42vh;
+        padding-bottom: 5vh;
+    }
     #floralist-1{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-evenly;
-    }
-    #floralist-left{
-        max-width: none;
     }
     #floralist-right{
         padding-top: 8vh;
@@ -485,13 +496,13 @@ header{
         align-items: center;
     }
     .floralist-img, .f2-img{
-        width: 66vh;
+        width: 55vh;
         height: 40vh;    
     }
-    .floralist-text{
-        padding: .25rem 1rem;
-        max-width: 40vh;
-        font-size: 1rem;
+    .floralist-text, .f2-text{
+        max-width: 45vh;
+        font-size: .9rem;
+        padding: .5rem;
     }
     #floralist-2{
         display: block;
@@ -525,8 +536,9 @@ header{
         width: 90vh;
         grid-row-gap: 1em;
         grid-column-gap: 2em;
+    }
 }
-@media screen and (max-width: 610px){
+@media screen and (max-width: 760px){
     #about-container{
         margin: 0;
         margin-top: 13vh;        
@@ -543,48 +555,19 @@ header{
         padding: 1rem 5px;
         margin: 0 15px 60px;
     }
-    #work-container{
-        width: 80vh;
-        grid-row-gap: 1em;
-        grid-column-gap: 1em;
-    }
-    #floralist-mid{
-        max-width: 40vh;
-    }
-    #floralist-left{
-        height: 80vh;
-        max-width: 32vh;
-    }
-    .floralist-img, .f2-img{
-        width: 40vh;
-        height: 30vh;
-    }
-    .floralist-text, .f2-text{
-        padding: 0;
-    }
-    header{
-        width: 220px;
-        left: auto;
-    }
-    #heading{
-        padding: .7vh;
-        margin-top: 12.5px;
-    }
-    #heading h1{
-        margin:0;
-    }
-}
-@media screen and (max-width: 425px){
     nav{
         padding: 0 5px;
     }
     header{
         width: 160px;
+        left: auto;
     }
     #heading{
+        padding: .7vh;
         margin-top: 4px;
     }
     #heading h1{
+        margin:0;
         font-size: 1.35em;
         margin-bottom: .01rem;
     }
@@ -625,13 +608,13 @@ header{
     }
     #floralist-left{
         height: 70vh;
-        width: 50vh;
+        width: 38vh;
         max-width: none;
-        margin-bottom: 5vh;
+        margin-bottom: 2vh;
     }
     #floralist-mid{
         max-width: none;
-        width: 50vh;
+        width: 65vh;
     }
     #floralist-right{
         padding-top: 5vh;
@@ -645,6 +628,7 @@ header{
     }
     .floralist-text {
         max-width: 50vh;
+        padding:.25rem 0 0;
     }
     .other-work{
         max-width: 50vh;
@@ -698,5 +682,4 @@ header{
         padding: 5px 10px;
         font-size: 25px;
     }
-}
 }

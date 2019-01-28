@@ -545,7 +545,7 @@ header{
         height: 40vh;    
     }
     .floralist-text{
-         
+        padding: .25rem 1rem;
         max-width: 40vh;
         font-size: 1rem;
     }
@@ -617,6 +617,9 @@ header{
         width: 40vh;
         height: 30vh;
     }
+    .floralist-text, .f2-text{
+        padding: 0;
+    }
     header{
         width: 220px;
         left: auto;
@@ -665,7 +668,7 @@ header{
         width: 50vh;
         grid-row-gap: 1em;
         grid-column-gap: 1em;
-        margin-top: 16vh;
+        margin-top: 15vh;
         grid-template-areas: 
         "work-left work-left work-left" 
         "work-top work-middle work-bot";
@@ -729,7 +732,7 @@ header{
 @media screen and (max-width: 320px){
     #work-container{
         width: 40vh;
-        margin-top: 18vh;
+        margin-top: 17vh;
     }
     #work-left{
         height:45vh;

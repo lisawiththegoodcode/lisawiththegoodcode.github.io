@@ -15,23 +15,19 @@ nav {
     z-index: 1;
     width: 100%;
 }
-
 .nav-link{
     color: #495057;
     font-family: 'Open Sans', sans-serif;
     letter-spacing: .075em;
     margin-top: 4.3vh;
 }
-
 .nav-tabs .nav-item {
     margin-top: 1.5px;
 }
-
 .nav-tabs .nav-link.active {
     color: #e5a2a2;
     border-color: #e5a2a2 #e5a2a2 #ffffff;
 }
-
 .line {
     position: fixed;
     bottom: 0;
@@ -46,26 +42,19 @@ nav {
     background-color: white;
     z-index: 1;
 }
-
 footer {
     padding: 5px;
     color: #495057;
-    /* font-weight: lighter; */
 }
-
 .nav-tabs .nav-link:hover {
     color: #e5a2a2;
     border-color: #e5a2a2 #e5a2a2 #ffffff;
     background-color: #ffffff;
     transition: .5s ease-in-out;
 }
-
 .nav-tabs {
-    /* height: 10vh; */
     border-bottom: 1px solid #e5a2a2;
-
 }
-
 #flex-container{
     display: flex;
     flex-direction: column;
@@ -73,13 +62,10 @@ footer {
     margin: 1rem auto;
     width: 100vh;
 }
-
 #about p {
     text-align: justify;
 }
-
 #bio-pic {
-    /* border: 2px solid black; */
     border: 1px solid #e5a2a2;
     border-radius: .25rem;
     height: 30em;
@@ -90,7 +76,6 @@ footer {
     background-position: top ;
     background-repeat: no-repeat;
 }
-
 #about-container{
     margin: 18vh auto;
     width: 100vh;
@@ -101,12 +86,9 @@ footer {
     grid-template-areas:
     "left right";
 }
-
 #about-left{
     height: 70vh;
     width: 100%;
-    /* border: 1px solid #e5a2a2; */
-    /* border-radius: .25rem; */
     grid-area: left;
     background-image: url("../img/John  Renee Wedding-547.jpg");
     background-size: cover;
@@ -116,7 +98,6 @@ footer {
     -webkit-box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.1);
     box-shadow:         inset 0 0 15px rgba(0, 0, 0, 0.1);
 }
-
 #about-right{
     padding: 0.5rem 0;
     grid-area: right;
@@ -125,7 +106,6 @@ footer {
     justify-content: center;
     align-items: center;
 }
-
 .btn {
     color: #495057;
     font-family: 'Open Sans', sans-serif;
@@ -138,7 +118,6 @@ footer {
     grid-area: res;
     transition: transform .5s ease-in-out;
 }
-
 .btn:hover {
     border:1px solid #e5a2a2;
     color: #e5a2a2;
@@ -149,11 +128,9 @@ footer {
     -ms-transform: scale(1.03);
     transform: scale(1.03);
 }
-
 #learn-more{
     padding:14px 18px;
 }
-
 #icons {
     display: flex;
     flex-direction: column;
@@ -163,14 +140,12 @@ footer {
     bottom: 7vh;
     padding: 20px;
 }
-
 #icons i {
     color: #212529;
     padding: 10px 0;
     font-size: 40px;
     transition: transform .5s ease-in-out;
 }
-
 #icons i:hover {
     color: #e5a2a2;
     transition: .5s ease-in-out;
@@ -180,7 +155,6 @@ footer {
     -ms-transform: scale(1.1);
     transform: scale(1.1);
 }
-
 .container {
     width:100%;
     border: 1px solid #495057;
@@ -188,11 +162,8 @@ footer {
     transition: transform 1s ease-in-out;
     text-align: center;
     box-shadow: 0 0 .5em rgba(73,80,87,.5);
-    /* box-shadow: inset 1px 1px 0 rgba(0,0,0,.1), inset 0px 0 rgba(0,0,0,.07); */
 }
-
 .container:hover {
-    /* border-color: #e5a2a2; */
     transition: 1s ease-in-out;
     cursor: pointer;
     opacity: .4;
@@ -202,8 +173,7 @@ footer {
     box-shadow:
     0 0 0 1px rgba(0,0,0,.05),
     0 0 0 1px rgba(0,0,0,.1);
-  }
-
+}
 #work-left{
     grid-area: work-left;
     background-image: url("../img/floralist-icon.png");
@@ -215,11 +185,9 @@ footer {
     width: 100%;
     height: 70vh;
 }
-
 #work-left:hover{
     background-image: url("../img/floralist-icon-hover.png");
 }
-
 #work-right-top{
     grid-area: work-top;
     background-image: url("../img/towers-icon.png");
@@ -229,11 +197,9 @@ footer {
     position: relative;
     display: block;
 }
-
 #work-right-top:hover{
     background-image: url("../img/towers-icon-hover.png");
 }
-
 #work-right-mid{
     grid-area: work-middle;
     background-image: url("../img/tic-tac-toe-icon.png");
@@ -243,11 +209,9 @@ footer {
     position: relative;
     display: block;
 }
-
 #work-right-mid:hover{
     background-image: url("../img/tic-tac-toe-hover.png");
 }
-
 #work-right-bot{
     grid-area: work-bot;
     background-image: url("../img/cart-icon.png");
@@ -257,11 +221,9 @@ footer {
     position: relative;
     display: block;
 }
-
 #work-right-bot:hover{
     background-image: url("../img/cart-hover.png");
 }
-
 #work-container{
     margin: 17.5vh auto 0;
     width: 90vh;
@@ -275,12 +237,10 @@ footer {
     "work-left work-middle"
     "work-left work-bot";
 }
-
 #work{
     position: relative;
     top:0;
 }
-
 #heading{
     padding: 1vh;
     display: flex;
@@ -288,7 +248,6 @@ footer {
     align-items: center;
     margin-top: 2px;   
 }
-
 header{
     width: 225px;
     position: absolute;
@@ -298,14 +257,12 @@ header{
     margin: auto;
     cursor: pointer;
 }
-
 #heading h1 {
     font: 1.8em 'Roboto Slab', serif;
     font-weight: lighter;
     letter-spacing: .1em;
     padding-left: .3em;
 }
-
 #heading h2{
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
@@ -325,7 +282,6 @@ header{
     grid-template-areas:
     "f-left f-mid f-right";
 }
-
 #floralist-left{
     grid-area: f-left;
     background-image: url("../img/Floralist.PNG");
@@ -346,7 +302,6 @@ header{
 }
 #floralist-intro{
     padding: 0 .5rem;
-
 }
 #floralist-right{
     grid-area:f-right;
@@ -356,25 +311,21 @@ header{
     height: 70vh;
     max-width: 40vh;
 }
-
 #floralist-welcome{
     background-image: url("../img/floralist-welcome.PNG");
 }
 #floralist-img-lib{
     background-image: url("../img/floralist-image-lib.PNG");
 }
-
 .floralist-img-card{
     width: 40vh;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
 }
-
 #floralist-btns{
     display: flex;
     justify-content: space-around;
     width:100%;
 }
-
 .floralist-img{
     background-size: contain;
     background-position: center;
@@ -491,8 +442,7 @@ header{
 #ttt-img{
     background-image: url("../img/TicTacToe.PNG");
 }
-
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1100px){
     #icons{
         flex-direction: row;
         align-items: center;
@@ -505,14 +455,6 @@ header{
         padding: 0 20px;
         font-size: 30px;
     }
-    #other-work{
-        padding: 16vh 0;
-    }
-    #floralist-1{
-        grid-column-gap:1.5em;
-    }
-}
-@media screen and (max-width: 768px){
     #work{
         display: flex;
         flex-direction: column;
@@ -525,12 +467,14 @@ header{
         flex-wrap: wrap;
         justify-content: space-evenly;
     }
+    #floralist-left{
+        max-width: none;
+    }
     #floralist-right{
         padding-top: 8vh;
         margin: 0 auto;
         height: auto;
         max-width: none;
-    
     }
     .floralist-img-card, #floralist-2 .floralist-img-card {
         width: 100%;
@@ -556,7 +500,9 @@ header{
     }
     #other-work{
         display:block;
+        border-top: 0.5px dotted #e5a2a2;
         padding: 0;
+        width: calc(100% - 30px);
     }
     .other-work{
         padding: 2vh 0;
@@ -565,18 +511,15 @@ header{
         height: auto
     }
     .work-img{
-        height: 40vh;
+        height: 36vh;
         width: 55vh;
         background-position: top;
     }
-    #towers{
-        padding: 16vh 0 0;
-    }
-    #ttt{
-        padding: 16vh 0 12vh;
+    #towers, #ttt{
+        padding: 15vh 0 0;
     }
     #cart{
-        padding: 4vh 0 12vh;
+        padding: 15vh 0;
     }
     #about-container{
         width: 90vh;
@@ -595,7 +538,6 @@ header{
         width: calc(90%);
         height: 68vh;
         margin: 2.5vh 20px 0 20px;
-        /* border-radius: 50%; */
     }
     #about-right{
         padding: 1rem 5px;
@@ -704,9 +646,6 @@ header{
     .floralist-text {
         max-width: 50vh;
     }
-    #other-work{
-        padding: 10vh 0;
-    }
     .other-work{
         max-width: 50vh;
         height: auto;
@@ -721,9 +660,6 @@ header{
     #towers, #ttt{
         padding: 10vh 0 0;
     }
-    /* #ttt{
-        padding: 10vh 0 10vh;
-    } */
     #cart{
         padding: 10vh 0 3vh;
     }

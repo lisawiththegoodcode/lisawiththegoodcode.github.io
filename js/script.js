@@ -6,13 +6,9 @@ window.onbeforeunload = function () {
 
 $(document).ready(function () {
     $('#about').hide();
-    // $('#floralist').hide();
     
     $('header').on('click', function () {
-        console.log("clicked");
-        // $('html').scrollTop(0); 
         window.scrollTo(0,0); 
-        // document.scrollingElement.scrollTop(0);
     });
 
     $('#work-left').on('click', function () {
@@ -88,9 +84,8 @@ $(document).ready(function () {
         }
       }
       
-    var x = window.matchMedia("(max-width: 768px)")
-    mediaQueries(x) // Call listener function at run time
-    x.addListener(mediaQueries) // Attach listener function on state changes
-
+    var x = window.matchMedia("(max-width: 1100px)");
+    mediaQueries(x);
+    x.addListener(mediaQueries);
 
 });

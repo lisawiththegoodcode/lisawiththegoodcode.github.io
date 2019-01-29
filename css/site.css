@@ -537,6 +537,9 @@ header{
         grid-row-gap: 1em;
         grid-column-gap: 2em;
     }
+    #work-right-bot{
+        background-size: cover;
+    }
 }
 @media screen and (max-width: 760px){
     #about-container{
@@ -602,9 +605,6 @@ header{
     }
     #work-left{
         height: 50vh;
-    }
-    #work-right-bot{
-        background-size: cover;
     }
     #floralist-left{
         height: 70vh;

@@ -648,7 +648,22 @@ header{
         padding: 10vh 0 3vh;
     }
 }
-
+@media screen and (max-width: 760px){
+    #floralist-left{
+        width: 60vh;
+    }
+    #floralist-mid{
+        width:60vh;
+    }
+}
+@media screen and (max-width: 500px){
+    #floralist-left{
+        width: 45vh;
+    }
+    #floralist-mid{
+        width:45vh;
+    }
+}
 @media screen and (max-width: 320px){
     #work-container{
         width: 40vh;

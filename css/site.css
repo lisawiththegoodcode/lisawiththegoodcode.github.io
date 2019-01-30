@@ -635,7 +635,7 @@ header{
         height: auto;
     }
     .other-work p{
-        font-size: 1rem;
+        font-size: .9rem;
     }
     .work-img{
         height: 40vh;
@@ -645,10 +645,10 @@ header{
         padding: 10vh 0 0;
     }
     #ttt{
-        padding: 10vh 0 10vh;  
+        padding: 10vh 0 0;  
     }
     #cart{
-        padding: 0 0 16vh;
+        padding: 10vh 0 16vh;
     }
 }
 @media screen and (max-width: 760px){

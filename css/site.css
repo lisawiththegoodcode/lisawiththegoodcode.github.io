@@ -121,7 +121,7 @@ footer {
 .btn:hover {
     border:1px solid #e5a2a2;
     color: #e5a2a2;
-    transition: .5s ease-in-out;
+    transition: .25s ease-in-out;
     cursor: pointer;
     opacity: 95%;
     -webkit-transform: scale(1.03);
@@ -148,7 +148,7 @@ footer {
 }
 #icons i:hover {
     color: #e5a2a2;
-    transition: .5s ease-in-out;
+    transition: .25s ease-in-out;
     cursor: pointer;
     opacity: 95%;
     -webkit-transform: scale(1.1);
@@ -641,11 +641,14 @@ header{
         height: 40vh;
         width: 50vh;
     }
-    #towers, #ttt{
+    #towers{
         padding: 10vh 0 0;
     }
+    #ttt{
+        padding: 10vh 0 10vh;  
+    }
     #cart{
-        padding: 10vh 0 3vh;
+        padding: 0 0 16vh;
     }
 }
 @media screen and (max-width: 760px){

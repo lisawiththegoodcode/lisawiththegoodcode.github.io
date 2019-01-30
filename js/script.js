@@ -45,6 +45,9 @@ $(document).ready(function () {
         });
     });
 
+    var x = window.matchMedia('(max-width: 1100px)');
+    // mediaQueries(x);
+
     function mediaQueries(x) {
         if (x.matches) { // If media query matches
             $('#learn-more').hide();
@@ -82,10 +85,7 @@ $(document).ready(function () {
                 }, 1000);
             });
         }
-      }
-      
-    var x = window.matchMedia("(max-width: 1100px)");
-    mediaQueries(x);
-    x.addListener(mediaQueries);
+    }
 
+    x.addListener(mediaQueries);
 });

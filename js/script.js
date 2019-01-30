@@ -15,12 +15,14 @@ $(document).ready(function () {
         $('html, body').animate({
             scrollTop: $('.floralist-container').offset().top
         }, 1000);
+        return false;
     });
 
     $('#learn-more').on('click', function () {
         $('html, body').animate({
             scrollTop: $("#floralist-2").offset().top
         }, 1000);
+        return false;
     });
 
     $('nav a').click(function () {
@@ -52,37 +54,48 @@ $(document).ready(function () {
         if (x.matches) { // If media query matches
             $('#learn-more').hide();
             $('#work-right-top').on('click', function () {
+                console.log("in if");
                 $('html, body').animate({
                     scrollTop: $('#towers').offset().top
                 }, 1000);
+                console.log("post if animate");
+                return false;   
             });
             $('#work-right-mid').on('click', function () {
                 $('html, body').animate({
                     scrollTop: $('#ttt').offset().top
                 }, 1000
                 );
+                return false;
             });
             $('#work-right-bot').on('click', function () {
                 $('html, body').animate({
                     scrollTop: $('#cart').offset().top
                 }, 1000);
+                return false;
             });
-        } else{
+        } 
+        
+        if(!x.matches) {
             $('#work-right-top').on('click', function () {
+                console.log("in else");
                 $('html, body').animate({
                     scrollTop: $('#other-work').offset().top
                 }, 1000);
+                console.log("post else animate");
+                return false;
             });
             $('#work-right-mid').on('click', function () {
                 $('html, body').animate({
                     scrollTop: $('#other-work').offset().top
-                }, 1000
-                );
+                }, 1000);
+                return false;
             });
             $('#work-right-bot').on('click', function () {
                 $('html, body').animate({
                     scrollTop: $('#other-work').offset().top
                 }, 1000);
+                return false;
             });
         }
     }

@@ -610,7 +610,7 @@ header{
         height: 70vh;
         width: 38vh;
         max-width: none;
-        margin-bottom: 2vh;
+        margin-bottom: 3vh;
     }
     #floralist-mid{
         max-width: none;
@@ -624,7 +624,7 @@ header{
     }
     .floralist-img, .f2-img{
         width: 50vh;
-        height: 40vh;
+        height: 50vh;
     }
     .floralist-text {
         max-width: 50vh;
@@ -633,9 +633,6 @@ header{
     .other-work{
         max-width: 50vh;
         height: auto;
-    }
-    .other-work p{
-        font-size: .9rem;
     }
     .work-img{
         height: 40vh;

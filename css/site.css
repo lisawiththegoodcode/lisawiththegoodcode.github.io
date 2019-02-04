@@ -400,13 +400,13 @@ header{
     justify-content: space-evenly;
     align-items: center;
     margin: 0 auto;
-    padding: 16vh 10vh;
+    /* padding: 16vh 10vh; */
     position: relative;
 }
 .other-work{
-    padding: 0 2vh;
+    padding: 16vh 2vh;
     max-width: 45vh;
-    height: 75vh;
+    /* height: 75vh; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -608,13 +608,14 @@ header{
     }
     #floralist-left{
         height: 70vh;
-        width: 38vh;
+        width: 55vh;
         max-width: none;
         margin-bottom: 3vh;
     }
     #floralist-mid{
         max-width: none;
-        width: 65vh;
+        width: 55vh;
+        margin: 5vh;
     }
     #floralist-right{
         padding-top: 5vh;
@@ -646,14 +647,6 @@ header{
     }
     #cart{
         padding: 10vh 0 16vh;
-    }
-}
-@media screen and (max-width: 760px){
-    #floralist-left{
-        width: 60vh;
-    }
-    #floralist-mid{
-        width:60vh;
     }
 }
 @media screen and (max-width: 500px){

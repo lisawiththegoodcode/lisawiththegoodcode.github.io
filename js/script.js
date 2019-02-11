@@ -5,7 +5,6 @@ window.onbeforeunload = function () {
 }
 
 $(document).ready(function () {
-    console.log("hello world");
     $('#about').hide();
     $('header').on('click', function () {
         window.scrollTo(0,0); 
@@ -45,21 +44,21 @@ $(document).ready(function () {
         console.log("in if");
         $('html, body').animate({
             scrollTop: $('#towers').offset().top
-        }, 500);
+        }, 1000);
         console.log("post if animate");
         return false;   
     });
     $('#work-right-mid').on('click', function () {
         $('html, body').animate({
             scrollTop: $('#ttt').offset().top
-        }, 500
+        }, 1000
         );
         return false;
     });
     $('#work-right-bot').on('click', function () {
         $('html, body').animate({
             scrollTop: $('#cart').offset().top
-        }, 500);
+        }, 1000);
         return false;
     });
 });

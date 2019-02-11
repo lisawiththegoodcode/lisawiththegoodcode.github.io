@@ -130,7 +130,13 @@ footer {
 }
 #learn-more{
     padding:14px 18px;
+    color: #495057;
+
 }
+#learn-more:hover{
+    color: #e5a2a2;
+}
+
 #icons {
     display: flex;
     flex-direction: column;
@@ -542,6 +548,9 @@ header{
     }
 }
 @media screen and (max-width: 760px){
+    #learn-more{
+        display: none;
+    }
     #about-container{
         margin: 0;
         margin-top: 13vh;        

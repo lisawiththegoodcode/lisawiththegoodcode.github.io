@@ -352,7 +352,7 @@ header{
 }
 #floralist-2 {
     margin: 0 auto;
-    padding-top: 16vh;
+    padding: 16vh 0 8vh;
     max-width: 80%;
     position: relative;
     display: flex;

@@ -397,7 +397,7 @@ header{
     align-items: flex-start;
     margin: 0 auto;
     position: relative;
-    padding: 8vh 0 16vh;
+    padding: 12vh 0 14vh;
 }
 .other-work{
     padding: 0 2vh;    
@@ -540,14 +540,13 @@ header{
     }
     #floralist-left{
         height: 70vh;
-        width: 50vh;
+        width: 55vh;
         max-width: none;
         margin-bottom: 6vh;
     }
     #floralist-mid{
         max-width: none;
-        width: 60vh;
-        margin-left: 5vh;
+        width: 55vh;
         padding: 0;
     }
     #floralist-1{
@@ -586,13 +585,10 @@ header{
         width: 55vh;
     }
     #towers, #ttt{
-        padding: 12vh 0 0;
-    }
-    #ttt{
-        padding: 12vh 0 6vh;  
+        padding: 11vh 0 0;
     }
     #cart{
-        padding: 6vh 0 16vh;
+        padding: 11vh 0 16vh;
     }
 }
 @media screen and (max-width: 500px){
@@ -604,7 +600,7 @@ header{
 
     }
     .floralist-img, .f2-img, .work-img{
-        height:40vh;
+        height:35vh;
     }
     .floralist-text {
         max-width: 45vh;
